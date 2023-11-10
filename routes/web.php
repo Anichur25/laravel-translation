@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
 Route::group(config('translation.route_group_config') + ['namespace' => 'JoeDixon\\Translation\\Http\\Controllers'], function ($router) {
     $router->get(config('translation.ui_url'), 'LanguageController@index')
         ->name('languages.index');
